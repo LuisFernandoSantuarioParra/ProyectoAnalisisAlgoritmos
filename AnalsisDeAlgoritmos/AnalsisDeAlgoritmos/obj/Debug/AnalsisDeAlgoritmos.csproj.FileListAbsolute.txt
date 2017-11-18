@@ -1,0 +1,12 @@
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\bin\Debug\AnalsisDeAlgoritmos.exe.config
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\bin\Debug\AnalsisDeAlgoritmos.exe
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\bin\Debug\AnalsisDeAlgoritmos.pdb
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.csprojResolveAssemblyReference.cache
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.principal.resources
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.Properties.Resources.resources
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.csproj.GenerateResource.Cache
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.csproj.CoreCompileInputs.cache
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.exe
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\obj\Debug\AnalsisDeAlgoritmos.pdb
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Shado\OneDrive\Documentos\Visual Studio 2017\Proyects\ProyectoAnalisisAlgoritmos\AnalsisDeAlgoritmos\AnalsisDeAlgoritmos\bin\Debug\MetroSuite.dll

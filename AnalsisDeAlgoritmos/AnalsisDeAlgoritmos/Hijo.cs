@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AnalsisDeAlgoritmos
 {
-    public partial class Form1 : Form
+    public partial class Hijo : Form
     {
-        public Form1()
+        public Hijo()
         {
             InitializeComponent();
         }
