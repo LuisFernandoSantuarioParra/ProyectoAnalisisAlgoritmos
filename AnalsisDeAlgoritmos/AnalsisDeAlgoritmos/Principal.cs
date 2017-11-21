@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace AnalsisDeAlgoritmos
 {
@@ -51,32 +52,25 @@ namespace AnalsisDeAlgoritmos
         //Fin de controlador mover ventana
 
         //Generar numeros aleatorios
-        public List<int> entrada =new List<int>();
+        public List<int> numeros =new List<int>();
 
         private void GenerarNumeros_Click(object sender, EventArgs e)
         {
-        int nElementos = int.Parse(cElementos.SelectedItem.ToString());
-            if (nElementos == 0)
-            {
-                CirProgreso.MaxValue = 1;
-            }
-            else {
-                CirProgreso.MaxValue = nElementos;
-            }
+            
+            int nElementos = int.Parse(cElementos.SelectedItem.ToString());
+            Console.WriteLine(nElementos);
 
-            Random ran = new Random();
-            try
-            {
-                for (int i = 0; i < nElementos; i++) {
-                    entrada.Add(ran.Next(1,10000000));
-                    //Console.WriteLine(entrada[i]);
-                    CirProgreso.Value = i;
-                    Aviso.Text = "El arreglo ha sido llenado";
-                }
+            Random rn = new Random();
+
+            for (int i=0; i<nElementos;i++) {
+                numeros.Add(rn.Next(1,65000));
+                CirProgreso.Value = i ;
+                //Console.WriteLine(texto[i]);
             }
-            catch {
-                Aviso.Text = "No se pudo llenar el arreglo";
+            foreach (int numero in numeros) {
+                Console.WriteLine(numero);
             }
+          
 
         }
         
