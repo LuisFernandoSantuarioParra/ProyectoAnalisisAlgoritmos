@@ -63,6 +63,7 @@
     <Compile Include="Hijo.Designer.cs">
       <DependentUpon>Hijo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insertion.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>

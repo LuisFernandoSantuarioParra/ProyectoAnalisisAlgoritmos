@@ -8,8 +8,8 @@ namespace AnalsisDeAlgoritmos
 {
     class Shell
     {
-        public void ordenarShell(int[]Numeros, int numeroElementos) {
-            int k,i,temp,j = 0;
+        public void ordenarShell(int[] Numeros, int numeroElementos) {
+            int k,i,temp,j ;
             k = numeroElementos / 2;
             while (k>0) {
                 for (i=k; i<numeroElementos;i++) {
@@ -17,11 +17,14 @@ namespace AnalsisDeAlgoritmos
                     temp = Numeros[i];
                     while ((j>=k)&&(Numeros[j-k]>temp))
                     {
-                        Numeros[j] = temp;
+                        Numeros[j] = Numeros[j - k] ;
+                        j = j - k;
 
                     }
-                    k /= 2;
+                    Numeros[j] = temp;
+                    
                 }
+                k /= 2;
             }
         }
     }
