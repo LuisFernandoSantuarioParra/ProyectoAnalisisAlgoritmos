@@ -336,14 +336,12 @@ namespace AnalsisDeAlgoritmos
 
 
         }
+
         private void iniciarOrdenarQuick()
         {
             ntodos = new int[numeros.Count];
 
             numeros.CopyTo(ntodos);
-
-            Quick quick = new Quick();
-
             try
             {
 
@@ -370,11 +368,11 @@ namespace AnalsisDeAlgoritmos
                                 {
                                     while (ntodos[R] >= piv && L < R) R--; if (L < R) ntodos[L++] = ntodos[R];
                                     while (ntodos[L] <= piv && L < R) L++; if (L < R) ntodos[R--] = ntodos[L];
-                                    
+                                    this.Invoke((MethodInvoker)delegate { UpdateChartQ(); });
+                                    Thread.Sleep(100);
                                 }
                                 ntodos[L] = piv; beg[i + 1] = L + 1; end[i + 1] = end[i]; end[i++] = L;
-                                this.Invoke((MethodInvoker)delegate { UpdateChartQ(); });
-                                Thread.Sleep(100);
+                                
                             }
                             else
                             {
