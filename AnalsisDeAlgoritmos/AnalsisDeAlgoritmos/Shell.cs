@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Threading;
 namespace AnalsisDeAlgoritmos
 {
     class Shell
     {
-        public void ordenarShell(int[] Numeros, int numeroElementos) {
+        public void ordenarShell(int[] Numeros, int numeroElementos, Thread thread) {
             int k,i,temp,j ;
             k = numeroElementos / 2;
             while (k>0) {
@@ -22,7 +22,7 @@ namespace AnalsisDeAlgoritmos
 
                     }
                     Numeros[j] = temp;
-                    
+                    Thread.Sleep(10);
                 }
                 k /= 2;
             }

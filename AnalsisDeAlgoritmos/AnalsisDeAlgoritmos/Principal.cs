@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using System.Threading;
 
 namespace AnalsisDeAlgoritmos
 {
     public partial class principal : Form
     {
+        private Thread charThread;
+        private Thread charThreadS;
+        private Thread charThreadI;
 
         //Importando dll para mover ventana sin borde
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -47,7 +51,7 @@ namespace AnalsisDeAlgoritmos
         //variables globales
 
         public List<int> numeros = new List<int>();
-        private int nElementos;
+        private int nElementos=100;
        
 
         //Generar numeros aleatorios
@@ -55,7 +59,6 @@ namespace AnalsisDeAlgoritmos
         private void GenerarNumeros_Click(object sender, EventArgs e)
         {
             
-            nElementos = int.Parse(cElementos.SelectedItem.ToString());
             CirProgreso.MaxValue = nElementos;
             Console.WriteLine(nElementos);
 
@@ -77,6 +80,7 @@ namespace AnalsisDeAlgoritmos
                     {
                         Aviso.Text = "Numeros generados y listos";
                         Ordenar.Visible = true;
+                        Ordenar.Enabled = true;
                     }
                     else
                     {
@@ -100,6 +104,7 @@ namespace AnalsisDeAlgoritmos
                     {
                         Aviso.Text = "Numeros generados y listos";
                         Ordenar.Visible = true;
+                        Ordenar.Enabled = true;
                     }
                     else
                     {
@@ -118,41 +123,231 @@ namespace AnalsisDeAlgoritmos
 
         }
 
-        private void Ordenar_Click(object sender, EventArgs e)
-        {
-            int[] nBurbuja = new int[numeros.Count];
-            int[] nShell = new int[numeros.Count];
-            int[] nInsertion = new int[numeros.Count];
-            numeros.CopyTo(nBurbuja);
-            numeros.CopyTo(nShell);
-            numeros.CopyTo(nInsertion);
+        int[] nBurbuja;
+        int[] nShell ;
+        int[] nInsertion;
+        int[] ntodos;
+        
+             
+        private void iniciarOrdenarBurbuja() {
+            nBurbuja = new int[numeros.Count];
+            ntodos = new int[numeros.Count];
 
-            Console.WriteLine(nBurbuja[2]);
-            Console.WriteLine(nShell[2]);
-            Console.WriteLine(nInsertion[2]);
+            for (int i=0;i<numeros.Count;i++) {
+                ntodos[i]=ntodos[i]+=1;
+
+            }
+            numeros.CopyTo(nBurbuja);
+            try
+            {
+                while (true)
+                {
+                    if (GBubble.IsHandleCreated)
+                    {
+                        
+
+                        this.Invoke((MethodInvoker)delegate { UpdateChartB(); });
+
+                        
+                        int temp, i, j, cambios;
+                        for (i = 0; i < nBurbuja.Length; ++i)
+                        {
+                            cambios = 0;
+                            for (j = 0; j < nBurbuja.Length - 1; ++j)
+                            {
+                                if (nBurbuja[i] < nBurbuja[j])
+                                {
+                                    temp = nBurbuja[j];
+                                    nBurbuja[j] = nBurbuja[i];
+                                    nBurbuja[i] = temp;
+                                    cambios = 1;
+                                    this.Invoke((MethodInvoker)delegate { UpdateChartB(); });
+                                    Thread.Sleep(10);
+                                }
+                            }
+                            if (cambios == 0)
+                            {
+                                break;
+                            }
+
+                        }
+                }
+                    else
+                    {
+                        //...
+                    }
+                    Thread.Sleep(10000) ;
+                }
+
+            }
+            catch
+            {
+                Aviso.Text = "No se pudieron ordenar los elementos";
+            }
+
+           
+
+        }
+
+        private void iniciarOrdenarShell()
+        {
+           
+            nShell = new int[numeros.Count];
+            ntodos = new int[numeros.Count];
+
+            for (int i = 0; i < numeros.Count; i++)
+            {
+                ntodos[i] = ntodos[i] += 1;
+
+            }
+            numeros.CopyTo(nShell);
+            try
+            {
+
+
+                while (true)
+                {
+                    if (GShell.IsHandleCreated)
+                    {
+                        this.Invoke((MethodInvoker)delegate { UpdateChartS(); });
+
+                        int k, i, temp, j;
+                        k = nShell.Length / 2;
+                        while (k > 0)
+                        {
+                            for (i = k; i < nShell.Length; i++)
+                            {
+                                j = i;
+                                temp = nShell[i];
+                                while ((j >= k) && (nShell[j - k] > temp))
+                                {
+                                    nShell[j] = nShell[j - k];
+                                    j = j - k;
+
+                                }
+                                nShell[j] = temp;
+                                this.Invoke((MethodInvoker)delegate { UpdateChartS(); });
+                                Thread.Sleep(10);
+                            }
+                            k /= 2;
+                        }
+
+                    }
+                    else
+                    {
+                        //...
+                    }
+                    Thread.Sleep(10000);
+                }
+
+            }
+            catch
+            {
+                Aviso.Text = "No se pudieron ordenar los elementos";
+            }
+
+
+
+        }
+
+        private void iniciarOrdenarInsertion()
+        {
+            nInsertion = new int[numeros.Count];
+            ntodos = new int[numeros.Count];
+
+            for (int i = 0; i < numeros.Count; i++)
+            {
+                ntodos[i] = ntodos[i] += 1;
+
+            }
+            numeros.CopyTo(nInsertion);
 
             try
             {
-                Shell shell = new Shell();
-                Bubble bubble = new Bubble();
-                Insertion insertion = new Insertion();
-                insertion.ordenarInsertion(nInsertion, nInsertion.Length);
-                shell.ordenarShell(nShell,nShell.Length);
-                bubble.ordenarBurbuja(nBurbuja,nBurbuja.Length);
-                
-                /*
-                for (int i=0;i<nShell.Length;i++) {
 
-                    Console.WriteLine(nShell[i]);
 
+                while (true)
+                {
+                    if (GInsertion.IsHandleCreated)
+                    {
+                        this.Invoke((MethodInvoker)delegate { UpdateChartI(); });
+
+                        int temp, j, i;
+                        for (i = 0; i < nInsertion.Length; ++i)
+                        {
+                            j = i;
+                            temp = nInsertion[i];
+                            while ((j > 0) && (temp < nInsertion[j - 1]))
+                            {
+                                nInsertion[j] = nInsertion[j - 1];
+                                j--;
+                                
+                            }
+                           nInsertion[j] = temp;
+                            this.Invoke((MethodInvoker)delegate { UpdateChartI(); });
+                            Thread.Sleep(10);
+                        }
+
+                    }
+                    else
+                    {
+                        //...
+                    }
+                    Thread.Sleep(10000);
                 }
-                //s.ordenarShell(nShell, nBurbuja.Length);
-              */  
+
             }
-            catch {
+            catch
+            {
                 Aviso.Text = "No se pudieron ordenar los elementos";
             }
+
+
+
         }
-       
+        private void UpdateChartB()
+        {
+
+            GBubble.Series["Burbuja"].Points.Clear();
+            for (int i = 0; i < nBurbuja.Length; i++)
+            {
+                GBubble.Series["Burbuja"].Points.AddXY(0, nBurbuja[i]);
+
+            }
+        }
+        private void UpdateChartI()
+        {
+            GInsertion.Series["Insertion"].Points.Clear();
+            for (int i = 0; i < nInsertion.Length; i++)
+            {
+                GInsertion.Series["Insertion"].Points.AddXY(0, nInsertion[i]);
+            }
+
+        }
+        private void UpdateChartS()
+        {
+            GShell.Series["Shell"].Points.Clear();
+            for (int i = 0; i < nShell.Length; i++)
+            {
+                GShell.Series["Shell"].Points.AddXY(0, nShell[i]);
+            }
+           
+        }
+        private void Ordenar_Click(object sender, EventArgs e)
+        {
+            charThread=new Thread(new ThreadStart(this.iniciarOrdenarBurbuja));
+            charThread.IsBackground = true;
+            
+            charThreadS = new Thread(new ThreadStart(this.iniciarOrdenarShell));
+            charThreadS.IsBackground = true;
+
+            charThreadI = new Thread(new ThreadStart(this.iniciarOrdenarInsertion));
+            charThreadI.IsBackground = true;
+
+            charThread.Start();
+            charThreadS.Start();
+            charThreadI.Start();
+        }
+
     }
 }
