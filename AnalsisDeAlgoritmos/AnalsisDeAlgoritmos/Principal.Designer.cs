@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            MetroSuite.MetroSeparator.MainColorScheme mainColorScheme4 = new MetroSuite.MetroSeparator.MainColorScheme();
+            MetroSuite.MetroSeparator.MainColorScheme mainColorScheme2 = new MetroSuite.MetroSeparator.MainColorScheme();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.BarraSuperior = new System.Windows.Forms.Panel();
             this.metroSeparator1 = new MetroSuite.MetroSeparator();
             this.TeslaLogo = new Bunifu.Framework.UI.BunifuImageButton();
@@ -65,6 +65,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.GQuick = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lBubble = new System.Windows.Forms.Label();
+            this.lInsertion = new System.Windows.Forms.Label();
+            this.lShell = new System.Windows.Forms.Label();
+            this.lQuick = new System.Windows.Forms.Label();
+            this.COrden = new System.Windows.Forms.ComboBox();
             this.BarraSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeslaLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinWindow)).BeginInit();
@@ -90,9 +96,9 @@
             // 
             // metroSeparator1
             // 
-            mainColorScheme4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
-            mainColorScheme4.Color2 = System.Drawing.Color.White;
-            this.metroSeparator1.ColorScheme = mainColorScheme4;
+            mainColorScheme2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            mainColorScheme2.Color2 = System.Drawing.Color.White;
+            this.metroSeparator1.ColorScheme = mainColorScheme2;
             this.metroSeparator1.Location = new System.Drawing.Point(4, 24);
             this.metroSeparator1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.metroSeparator1.Name = "metroSeparator1";
@@ -147,52 +153,52 @@
             // GBubble
             // 
             this.GBubble.BackColor = System.Drawing.Color.Transparent;
-            chartArea13.Area3DStyle.Enable3D = true;
-            chartArea13.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea13.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea13.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea13.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea13.BackColor = System.Drawing.Color.Transparent;
-            chartArea13.Name = "ChartArea1";
-            this.GBubble.ChartAreas.Add(chartArea13);
-            legend13.BackColor = System.Drawing.Color.Transparent;
-            legend13.ForeColor = System.Drawing.Color.White;
-            legend13.Name = "Legend1";
-            this.GBubble.Legends.Add(legend13);
+            chartArea5.Area3DStyle.Enable3D = true;
+            chartArea5.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea5.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea5.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea5.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea5.BackColor = System.Drawing.Color.Transparent;
+            chartArea5.Name = "ChartArea1";
+            this.GBubble.ChartAreas.Add(chartArea5);
+            legend5.BackColor = System.Drawing.Color.Transparent;
+            legend5.ForeColor = System.Drawing.Color.White;
+            legend5.Name = "Legend1";
+            this.GBubble.Legends.Add(legend5);
             this.GBubble.Location = new System.Drawing.Point(2, 112);
             this.GBubble.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GBubble.Name = "GBubble";
             this.GBubble.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series13.LabelForeColor = System.Drawing.Color.White;
-            series13.Legend = "Legend1";
-            series13.Name = "Burbuja";
-            series13.YValuesPerPoint = 2;
-            this.GBubble.Series.Add(series13);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series5.LabelForeColor = System.Drawing.Color.White;
+            series5.Legend = "Legend1";
+            series5.Name = "Burbuja";
+            series5.YValuesPerPoint = 2;
+            this.GBubble.Series.Add(series5);
             this.GBubble.Size = new System.Drawing.Size(450, 299);
             this.GBubble.TabIndex = 1;
             this.GBubble.Text = "chart1";
@@ -200,51 +206,51 @@
             // GInsertion
             // 
             this.GInsertion.BackColor = System.Drawing.Color.Transparent;
-            chartArea14.Area3DStyle.Enable3D = true;
-            chartArea14.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea14.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea14.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea14.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea14.BackColor = System.Drawing.Color.Transparent;
-            chartArea14.Name = "ChartArea1";
-            this.GInsertion.ChartAreas.Add(chartArea14);
-            legend14.BackColor = System.Drawing.Color.Transparent;
-            legend14.ForeColor = System.Drawing.Color.White;
-            legend14.Name = "Legend1";
-            this.GInsertion.Legends.Add(legend14);
+            chartArea6.Area3DStyle.Enable3D = true;
+            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea6.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea6.BackColor = System.Drawing.Color.Transparent;
+            chartArea6.Name = "ChartArea1";
+            this.GInsertion.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.Color.Transparent;
+            legend6.ForeColor = System.Drawing.Color.White;
+            legend6.Name = "Legend1";
+            this.GInsertion.Legends.Add(legend6);
             this.GInsertion.Location = new System.Drawing.Point(679, 112);
             this.GInsertion.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GInsertion.Name = "GInsertion";
             this.GInsertion.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series14.LabelForeColor = System.Drawing.Color.White;
-            series14.Legend = "Legend1";
-            series14.Name = "Insertion";
-            this.GInsertion.Series.Add(series14);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series6.LabelForeColor = System.Drawing.Color.White;
+            series6.Legend = "Legend1";
+            series6.Name = "Insertion";
+            this.GInsertion.Series.Add(series6);
             this.GInsertion.Size = new System.Drawing.Size(450, 299);
             this.GInsertion.TabIndex = 2;
             this.GInsertion.Text = "GInsertion";
@@ -252,51 +258,51 @@
             // GShell
             // 
             this.GShell.BackColor = System.Drawing.Color.Transparent;
-            chartArea15.Area3DStyle.Enable3D = true;
-            chartArea15.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea15.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea15.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea15.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.BackColor = System.Drawing.Color.Transparent;
-            chartArea15.Name = "ChartArea1";
-            this.GShell.ChartAreas.Add(chartArea15);
-            legend15.BackColor = System.Drawing.Color.Transparent;
-            legend15.ForeColor = System.Drawing.Color.White;
-            legend15.Name = "Legend1";
-            this.GShell.Legends.Add(legend15);
+            chartArea7.Area3DStyle.Enable3D = true;
+            chartArea7.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea7.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea7.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea7.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea7.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea7.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea7.BackColor = System.Drawing.Color.Transparent;
+            chartArea7.Name = "ChartArea1";
+            this.GShell.ChartAreas.Add(chartArea7);
+            legend7.BackColor = System.Drawing.Color.Transparent;
+            legend7.ForeColor = System.Drawing.Color.White;
+            legend7.Name = "Legend1";
+            this.GShell.Legends.Add(legend7);
             this.GShell.Location = new System.Drawing.Point(2, 440);
             this.GShell.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GShell.Name = "GShell";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series15.LabelForeColor = System.Drawing.Color.White;
-            series15.Legend = "Legend1";
-            series15.Name = "Shell";
-            series15.YValuesPerPoint = 4;
-            this.GShell.Series.Add(series15);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series7.LabelForeColor = System.Drawing.Color.White;
+            series7.Legend = "Legend1";
+            series7.Name = "Shell";
+            series7.YValuesPerPoint = 4;
+            this.GShell.Series.Add(series7);
             this.GShell.Size = new System.Drawing.Size(450, 299);
             this.GShell.TabIndex = 3;
             this.GShell.Text = "GInsertion";
@@ -306,7 +312,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(157, 86);
+            this.label1.Location = new System.Drawing.Point(74, 86);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 24);
@@ -319,7 +325,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(175, 414);
+            this.label2.Location = new System.Drawing.Point(74, 414);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 24);
@@ -343,7 +349,7 @@
             // 
             this.GenerarNumeros.BackColor = System.Drawing.Color.Black;
             this.GenerarNumeros.ForeColor = System.Drawing.Color.White;
-            this.GenerarNumeros.Location = new System.Drawing.Point(252, 34);
+            this.GenerarNumeros.Location = new System.Drawing.Point(350, 34);
             this.GenerarNumeros.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GenerarNumeros.Name = "GenerarNumeros";
             this.GenerarNumeros.Size = new System.Drawing.Size(106, 24);
@@ -357,7 +363,7 @@
             this.Aviso.AutoSize = true;
             this.Aviso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Aviso.ForeColor = System.Drawing.Color.White;
-            this.Aviso.Location = new System.Drawing.Point(567, 35);
+            this.Aviso.Location = new System.Drawing.Point(665, 35);
             this.Aviso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Aviso.Name = "Aviso";
             this.Aviso.Size = new System.Drawing.Size(0, 24);
@@ -368,7 +374,7 @@
             // 
             this.Ordenar.BackColor = System.Drawing.Color.Black;
             this.Ordenar.ForeColor = System.Drawing.Color.White;
-            this.Ordenar.Location = new System.Drawing.Point(378, 30);
+            this.Ordenar.Location = new System.Drawing.Point(476, 30);
             this.Ordenar.Name = "Ordenar";
             this.Ordenar.Size = new System.Drawing.Size(170, 32);
             this.Ordenar.TabIndex = 13;
@@ -393,7 +399,7 @@
             this.AShell.BackColor = System.Drawing.Color.Black;
             this.AShell.ForeColor = System.Drawing.Color.White;
             this.AShell.FormattingEnabled = true;
-            this.AShell.Location = new System.Drawing.Point(459, 440);
+            this.AShell.Location = new System.Drawing.Point(460, 457);
             this.AShell.MultiColumn = true;
             this.AShell.Name = "AShell";
             this.AShell.Size = new System.Drawing.Size(224, 238);
@@ -415,7 +421,7 @@
             this.LNgenerado.BackColor = System.Drawing.Color.Black;
             this.LNgenerado.ForeColor = System.Drawing.Color.White;
             this.LNgenerado.FormattingEnabled = true;
-            this.LNgenerado.Location = new System.Drawing.Point(1131, 440);
+            this.LNgenerado.Location = new System.Drawing.Point(1131, 457);
             this.LNgenerado.MultiColumn = true;
             this.LNgenerado.Name = "LNgenerado";
             this.LNgenerado.Size = new System.Drawing.Size(224, 238);
@@ -440,7 +446,7 @@
             "80",
             "90",
             "100"});
-            this.Valores.Location = new System.Drawing.Point(161, 35);
+            this.Valores.Location = new System.Drawing.Point(262, 35);
             this.Valores.Name = "Valores";
             this.Valores.Size = new System.Drawing.Size(77, 21);
             this.Valores.TabIndex = 23;
@@ -457,7 +463,7 @@
             "Candy",
             "Pastel",
             "Area"});
-            this.CSerie.Location = new System.Drawing.Point(78, 35);
+            this.CSerie.Location = new System.Drawing.Point(179, 35);
             this.CSerie.Name = "CSerie";
             this.CSerie.Size = new System.Drawing.Size(77, 21);
             this.CSerie.TabIndex = 24;
@@ -468,7 +474,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(823, 86);
+            this.label4.Location = new System.Drawing.Point(765, 89);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 24);
@@ -481,7 +487,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(852, 413);
+            this.label5.Location = new System.Drawing.Point(765, 416);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 24);
@@ -492,55 +498,123 @@
             // GQuick
             // 
             this.GQuick.BackColor = System.Drawing.Color.Transparent;
-            chartArea16.Area3DStyle.Enable3D = true;
-            chartArea16.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea16.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea16.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea16.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.BackColor = System.Drawing.Color.Transparent;
-            chartArea16.Name = "ChartArea1";
-            this.GQuick.ChartAreas.Add(chartArea16);
-            legend16.BackColor = System.Drawing.Color.Transparent;
-            legend16.ForeColor = System.Drawing.Color.White;
-            legend16.Name = "Legend1";
-            this.GQuick.Legends.Add(legend16);
-            this.GQuick.Location = new System.Drawing.Point(691, 424);
+            chartArea8.Area3DStyle.Enable3D = true;
+            chartArea8.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea8.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea8.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea8.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea8.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White;
+            chartArea8.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea8.BackColor = System.Drawing.Color.Transparent;
+            chartArea8.Name = "ChartArea1";
+            this.GQuick.ChartAreas.Add(chartArea8);
+            legend8.BackColor = System.Drawing.Color.Transparent;
+            legend8.ForeColor = System.Drawing.Color.White;
+            legend8.Name = "Legend1";
+            this.GQuick.Legends.Add(legend8);
+            this.GQuick.Location = new System.Drawing.Point(691, 440);
             this.GQuick.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GQuick.Name = "GQuick";
             this.GQuick.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series16.LabelForeColor = System.Drawing.Color.White;
-            series16.Legend = "Legend1";
-            series16.Name = "Quick";
-            series16.YValuesPerPoint = 4;
-            this.GQuick.Series.Add(series16);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series8.LabelForeColor = System.Drawing.Color.White;
+            series8.Legend = "Legend1";
+            series8.Name = "Quick";
+            series8.YValuesPerPoint = 4;
+            this.GQuick.Series.Add(series8);
             this.GQuick.Size = new System.Drawing.Size(433, 314);
             this.GQuick.TabIndex = 26;
             this.GQuick.Text = "GInsertion";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "label6";
+            // 
+            // lBubble
+            // 
+            this.lBubble.AutoSize = true;
+            this.lBubble.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lBubble.ForeColor = System.Drawing.Color.White;
+            this.lBubble.Location = new System.Drawing.Point(189, 97);
+            this.lBubble.Name = "lBubble";
+            this.lBubble.Size = new System.Drawing.Size(12, 17);
+            this.lBubble.TabIndex = 29;
+            this.lBubble.Text = ".";
+            // 
+            // lInsertion
+            // 
+            this.lInsertion.AutoSize = true;
+            this.lInsertion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lInsertion.ForeColor = System.Drawing.Color.White;
+            this.lInsertion.Location = new System.Drawing.Point(891, 97);
+            this.lInsertion.Name = "lInsertion";
+            this.lInsertion.Size = new System.Drawing.Size(12, 17);
+            this.lInsertion.TabIndex = 30;
+            this.lInsertion.Text = ".";
+            // 
+            // lShell
+            // 
+            this.lShell.AutoSize = true;
+            this.lShell.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lShell.ForeColor = System.Drawing.Color.White;
+            this.lShell.Location = new System.Drawing.Point(189, 424);
+            this.lShell.Name = "lShell";
+            this.lShell.Size = new System.Drawing.Size(12, 17);
+            this.lShell.TabIndex = 31;
+            this.lShell.Text = ".";
+            // 
+            // lQuick
+            // 
+            this.lQuick.AutoSize = true;
+            this.lQuick.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lQuick.ForeColor = System.Drawing.Color.White;
+            this.lQuick.Location = new System.Drawing.Point(891, 422);
+            this.lQuick.Name = "lQuick";
+            this.lQuick.Size = new System.Drawing.Size(12, 17);
+            this.lQuick.TabIndex = 32;
+            this.lQuick.Text = ".";
+            // 
+            // COrden
+            // 
+            this.COrden.BackColor = System.Drawing.Color.Black;
+            this.COrden.ForeColor = System.Drawing.Color.White;
+            this.COrden.FormattingEnabled = true;
+            this.COrden.Items.AddRange(new object[] {
+            "Random",
+            "AscendenteD",
+            "DescendenteA"});
+            this.COrden.Location = new System.Drawing.Point(96, 35);
+            this.COrden.Name = "COrden";
+            this.COrden.Size = new System.Drawing.Size(77, 21);
+            this.COrden.TabIndex = 34;
+            this.COrden.Text = "Random";
             // 
             // principal
             // 
@@ -548,6 +622,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1378, 750);
+            this.Controls.Add(this.COrden);
+            this.Controls.Add(this.lQuick);
+            this.Controls.Add(this.lShell);
+            this.Controls.Add(this.lInsertion);
+            this.Controls.Add(this.lBubble);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.GQuick);
             this.Controls.Add(this.label4);
@@ -610,6 +690,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart GQuick;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lBubble;
+        private System.Windows.Forms.Label lInsertion;
+        private System.Windows.Forms.Label lShell;
+        private System.Windows.Forms.Label lQuick;
+        private System.Windows.Forms.ComboBox COrden;
     }
 }
 

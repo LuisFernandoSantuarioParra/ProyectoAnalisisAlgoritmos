@@ -54,7 +54,8 @@ namespace AnalsisDeAlgoritmos
         public List<int> numeros = new List<int>();
         private int nElementos;
         private String serie;
-       
+        private String modo;
+
 
         //Generar numeros aleatorios
 
@@ -110,76 +111,269 @@ namespace AnalsisDeAlgoritmos
 
             Random rn = new Random();
 
-            try
-            {
-                if (numeros.Count == 0)
-                {
-                    for (int i = 0; i < nElementos; i++)
-                    {
-                        numeros.Add(rn.Next(1, 65000));
-                       
-                        //Console.WriteLine(texto[i]);
-                    }
+            modo = COrden.SelectedItem.ToString();
 
-                    //aviso
-                    if (numeros.Count == nElementos)
-                    {
-                        Aviso.Text = "Numeros generados y listos";
-                        Ordenar.Visible = true;
-                        Ordenar.Enabled = true;
-                        LNgenerado.Visible = true;
-                    }
-                    else
-                    {
-                        Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
-                    }
-                    //fin aviso
-                }
-                else
-                {
-                    numeros.Clear();
+            switch (modo) {
 
-                    for (int i = 0; i < nElementos; i++)
+                case "Random":
+                    try
                     {
-                        numeros.Add(rn.Next(1, 65000));
-                       
-                        //Console.WriteLine(texto[i]);
-                    }
+                        if (numeros.Count == 0)
+                        {
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
 
-                    //aviso
-                    if (numeros.Count == nElementos)
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados y listos";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                        else
+                        {
+                            numeros.Clear();
+
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                    }
+                    catch
                     {
-                        Aviso.Text = "Numeros generados";
-                        Ordenar.Visible = true;
-                        Ordenar.Enabled = true;
-                        LNgenerado.Visible = true;
+                        Aviso.Text = "A ocurrido un error, reinicie el programa";
                     }
-                    else
+                    break;
+                case "AscendenteD":
+                    try
                     {
-                        Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                        if (numeros.Count == 0)
+                        {
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados y listos";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                                numeros.Sort();
+                                numeros.Reverse();
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                        else
+                        {
+                            numeros.Clear();
+
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                                numeros.Sort();
+                                numeros.Reverse();
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
                     }
-                    //fin aviso
-                }
-            }
-            catch
-            {
-                Aviso.Text = "A ocurrido un error, reinicie el programa";
-            }
+                    catch
+                    {
+                        Aviso.Text = "A ocurrido un error, reinicie el programa";
+                    }
+                    break;
+
+                case "DescendenteA":
+                    try
+                    {
+                        if (numeros.Count == 0)
+                        {
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados y listos";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                                numeros.Sort();
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                        else
+                        {
+                            numeros.Clear();
+
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                                numeros.Sort();
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                    }
+                    catch
+                    {
+                        Aviso.Text = "A ocurrido un error, reinicie el programa";
+                    }
+                    break;
+                default:
+                    try
+                    {
+                        if (numeros.Count == 0)
+                        {
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados y listos";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                        else
+                        {
+                            numeros.Clear();
+
+                            for (int i = 0; i < nElementos; i++)
+                            {
+                                numeros.Add(rn.Next(1, 65000));
+
+                                //Console.WriteLine(texto[i]);
+                            }
+
+                            //aviso
+                            if (numeros.Count == nElementos)
+                            {
+                                Aviso.Text = "Numeros generados";
+                                Ordenar.Visible = true;
+                                Ordenar.Enabled = true;
+                                LNgenerado.Visible = true;
+                            }
+                            else
+                            {
+                                Aviso.Text = "NO SE PUDO LLENAR EL ARREGLO";
+                            }
+                            //fin aviso
+                        }
+                    }
+                    catch
+                    {
+                        Aviso.Text = "A ocurrido un error, reinicie el programa";
+                    }
+                    break;
 
 
-
+                   
 
         }
+
+
+    }
 
         int[] nBurbuja;
         int[] nShell ;
         int[] nInsertion;
         int[] ntodos;
-        
-             
+
+        int contadorB;
+        int contadorI;
+        int contadorS;
+        int contadorQ;
+
+
+
         private void iniciarOrdenarBurbuja() {
             nBurbuja = new int[numeros.Count];
-            
+            contadorB = 0;
 
             numeros.CopyTo(nBurbuja);
             
@@ -193,29 +387,30 @@ namespace AnalsisDeAlgoritmos
 
                         this.Invoke((MethodInvoker)delegate { UpdateChartB(); });
 
-                        
-                        int temp, i, j, cambios;
-                        for (i = 0; i < nBurbuja.Length; ++i)
+                        bool swapped = true;
+                        int j = 0;
+                        int tmp;
+                        while (swapped)
                         {
-                            cambios = 0;
-                            for (j = 0; j < nBurbuja.Length - 1; ++j)
+                            swapped = false;
+                            j++;
+                            for (int i = 0; i < nBurbuja.Length - j; i++)
                             {
-                                if (nBurbuja[i] < nBurbuja[j])
+                                contadorB += 1;
+
+                                if (nBurbuja[i] > nBurbuja[i + 1])
                                 {
-                                    temp = nBurbuja[j];
-                                    nBurbuja[j] = nBurbuja[i];
-                                    nBurbuja[i] = temp;
-                                    cambios = 1;
+                                    tmp = nBurbuja[i];
+                                    nBurbuja[i] = nBurbuja[i + 1];
+                                    nBurbuja[i + 1] = tmp;
+                                    swapped = true;
+
                                     this.Invoke((MethodInvoker)delegate { UpdateChartB(); });
-                                    Thread.Sleep(50);
+                                    Thread.Sleep(20);
                                 }
                             }
-                            if (cambios == 0)
-                            {
-                                break;
-                            }
-
                         }
+
                 }
                     else
                     {
@@ -240,6 +435,7 @@ namespace AnalsisDeAlgoritmos
            
             nShell = new int[numeros.Count];
             
+            contadorS = 0 ;
             numeros.CopyTo(nShell);
             try
             {
@@ -249,6 +445,7 @@ namespace AnalsisDeAlgoritmos
                 {
                     if (GShell.IsHandleCreated)
                     {
+                        
                         this.Invoke((MethodInvoker)delegate { UpdateChartS(); });
 
                         int k, i, temp, j;
@@ -257,17 +454,20 @@ namespace AnalsisDeAlgoritmos
                         {
                             for (i = k; i < nShell.Length; i++)
                             {
+                                contadorS += 1;
                                 j = i;
                                 temp = nShell[i];
                                 while ((j >= k) && (nShell[j - k] > temp))
                                 {
                                     nShell[j] = nShell[j - k];
                                     j = j - k;
+                                   
 
                                 }
                                 nShell[j] = temp;
                                 this.Invoke((MethodInvoker)delegate { UpdateChartS(); });
-                                Thread.Sleep(100);
+                                
+                                Thread.Sleep(70);
                             }
                             k /= 2;
                         }
@@ -294,7 +494,7 @@ namespace AnalsisDeAlgoritmos
         private void iniciarOrdenarInsertion()
         {
             nInsertion = new int[numeros.Count];
-          
+            contadorI = 0;
             numeros.CopyTo(nInsertion);
 
             try
@@ -310,6 +510,7 @@ namespace AnalsisDeAlgoritmos
                         int temp, j, i;
                         for (i = 0; i < nInsertion.Length; ++i)
                         {
+                            contadorI += 1;
                             j = i;
                             temp = nInsertion[i];
                             while ((j > 0) && (temp < nInsertion[j - 1]))
@@ -346,7 +547,7 @@ namespace AnalsisDeAlgoritmos
         private void iniciarOrdenarQuick()
         {
             ntodos = new int[numeros.Count];
-
+            contadorQ = 0;
             numeros.CopyTo(ntodos);
             try
             {
@@ -374,11 +575,12 @@ namespace AnalsisDeAlgoritmos
                                 {
                                     while (ntodos[R] >= piv && L < R) R--; if (L < R) ntodos[L++] = ntodos[R];
                                     while (ntodos[L] <= piv && L < R) L++; if (L < R) ntodos[R--] = ntodos[L];
+                                    
                                     this.Invoke((MethodInvoker)delegate { UpdateChartQ(); });
                                     Thread.Sleep(100);
                                 }
                                 ntodos[L] = piv; beg[i + 1] = L + 1; end[i + 1] = end[i]; end[i++] = L;
-                                
+                                contadorQ += 1;
                             }
                             else
                             {
@@ -418,6 +620,7 @@ namespace AnalsisDeAlgoritmos
                 GBubble.Series["Burbuja"].Points.AddXY(0, nBurbuja[i]);
                 ABubble.Items.Add(nBurbuja[i]);
             }
+            lBubble.Text= "Cantidad de comparaciones: " + contadorB.ToString();
         }
         private void UpdateChartI()
         {
@@ -428,6 +631,7 @@ namespace AnalsisDeAlgoritmos
                 GInsertion.Series["Insertion"].Points.AddXY(0, nInsertion[i]);
                 AInsertion.Items.Add(nInsertion[i]);
             }
+            lInsertion.Text = "Cantidad de comparaciones: " + contadorI.ToString();
 
         }
         private void UpdateChartS()
@@ -439,6 +643,7 @@ namespace AnalsisDeAlgoritmos
                 GShell.Series["Shell"].Points.AddXY(0, nShell[i]);
                 AShell.Items.Add(nShell[i]);
             }
+            lShell.Text = "Cantidad de comparaciones: " + contadorS.ToString();
            
         }
         private void UpdateChartQ()
@@ -450,27 +655,29 @@ namespace AnalsisDeAlgoritmos
                 GQuick.Series["Quick"].Points.AddXY(0, ntodos[i]);
                 LNgenerado.Items.Add(ntodos[i]);
             }
+            lQuick.Text ="Cantidad de comparaciones: "+contadorQ.ToString();
 
         }
         private void Ordenar_Click(object sender, EventArgs e)
         {
             
-            charThread=new Thread(new ThreadStart(this.iniciarOrdenarBurbuja));
-            charThread.IsBackground = true;
+                charThread = new Thread(new ThreadStart(this.iniciarOrdenarBurbuja));
+                charThread.IsBackground = true;
 
-            charThreadQ = new Thread(new ThreadStart(this.iniciarOrdenarQuick));
-            charThreadQ.IsBackground = true;
+                charThreadQ = new Thread(new ThreadStart(this.iniciarOrdenarQuick));
+                charThreadQ.IsBackground = true;
 
-            charThreadS = new Thread(new ThreadStart(this.iniciarOrdenarShell));
-            charThreadS.IsBackground = true;
+                charThreadS = new Thread(new ThreadStart(this.iniciarOrdenarShell));
+                charThreadS.IsBackground = true;
 
-            charThreadI = new Thread(new ThreadStart(this.iniciarOrdenarInsertion));
-            charThreadI.IsBackground = true;
+                charThreadI = new Thread(new ThreadStart(this.iniciarOrdenarInsertion));
+                charThreadI.IsBackground = true;
 
-            charThread.Start();
-            charThreadS.Start();
-            charThreadI.Start();
-            charThreadQ.Start();
+                charThread.Start();
+                charThreadS.Start();
+                charThreadI.Start();
+                charThreadQ.Start();
+            
         }
        
 
