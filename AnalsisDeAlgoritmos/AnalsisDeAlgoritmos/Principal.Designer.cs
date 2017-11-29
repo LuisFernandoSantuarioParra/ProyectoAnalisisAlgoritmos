@@ -65,7 +65,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.GQuick = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label6 = new System.Windows.Forms.Label();
             this.lBubble = new System.Windows.Forms.Label();
             this.lInsertion = new System.Windows.Forms.Label();
             this.lShell = new System.Windows.Forms.Label();
@@ -125,7 +124,7 @@
             this.MinWindow.BackColor = System.Drawing.Color.Transparent;
             this.MinWindow.Image = ((System.Drawing.Image)(resources.GetObject("MinWindow.Image")));
             this.MinWindow.ImageActive = null;
-            this.MinWindow.Location = new System.Drawing.Point(1338, 4);
+            this.MinWindow.Location = new System.Drawing.Point(1255, 5);
             this.MinWindow.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.MinWindow.Name = "MinWindow";
             this.MinWindow.Size = new System.Drawing.Size(16, 15);
@@ -140,7 +139,7 @@
             this.CloseWindow.BackColor = System.Drawing.Color.Transparent;
             this.CloseWindow.Image = ((System.Drawing.Image)(resources.GetObject("CloseWindow.Image")));
             this.CloseWindow.ImageActive = null;
-            this.CloseWindow.Location = new System.Drawing.Point(1360, 4);
+            this.CloseWindow.Location = new System.Drawing.Point(1277, 5);
             this.CloseWindow.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.CloseWindow.Name = "CloseWindow";
             this.CloseWindow.Size = new System.Drawing.Size(16, 15);
@@ -241,7 +240,7 @@
             legend6.ForeColor = System.Drawing.Color.White;
             legend6.Name = "Legend1";
             this.GInsertion.Legends.Add(legend6);
-            this.GInsertion.Location = new System.Drawing.Point(679, 112);
+            this.GInsertion.Location = new System.Drawing.Point(653, 112);
             this.GInsertion.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GInsertion.Name = "GInsertion";
             this.GInsertion.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -388,10 +387,10 @@
             this.AInsertion.BackColor = System.Drawing.Color.Black;
             this.AInsertion.ForeColor = System.Drawing.Color.White;
             this.AInsertion.FormattingEnabled = true;
-            this.AInsertion.Location = new System.Drawing.Point(1130, 130);
+            this.AInsertion.Location = new System.Drawing.Point(1104, 130);
             this.AInsertion.MultiColumn = true;
             this.AInsertion.Name = "AInsertion";
-            this.AInsertion.Size = new System.Drawing.Size(224, 238);
+            this.AInsertion.Size = new System.Drawing.Size(187, 238);
             this.AInsertion.TabIndex = 17;
             // 
             // AShell
@@ -402,7 +401,7 @@
             this.AShell.Location = new System.Drawing.Point(460, 457);
             this.AShell.MultiColumn = true;
             this.AShell.Name = "AShell";
-            this.AShell.Size = new System.Drawing.Size(224, 238);
+            this.AShell.Size = new System.Drawing.Size(186, 238);
             this.AShell.TabIndex = 19;
             // 
             // ABubble
@@ -413,7 +412,7 @@
             this.ABubble.Location = new System.Drawing.Point(459, 130);
             this.ABubble.MultiColumn = true;
             this.ABubble.Name = "ABubble";
-            this.ABubble.Size = new System.Drawing.Size(224, 238);
+            this.ABubble.Size = new System.Drawing.Size(187, 238);
             this.ABubble.TabIndex = 20;
             // 
             // LNgenerado
@@ -421,10 +420,10 @@
             this.LNgenerado.BackColor = System.Drawing.Color.Black;
             this.LNgenerado.ForeColor = System.Drawing.Color.White;
             this.LNgenerado.FormattingEnabled = true;
-            this.LNgenerado.Location = new System.Drawing.Point(1131, 457);
+            this.LNgenerado.Location = new System.Drawing.Point(1105, 457);
             this.LNgenerado.MultiColumn = true;
             this.LNgenerado.Name = "LNgenerado";
-            this.LNgenerado.Size = new System.Drawing.Size(224, 238);
+            this.LNgenerado.Size = new System.Drawing.Size(186, 238);
             this.LNgenerado.TabIndex = 21;
             // 
             // Valores
@@ -474,7 +473,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(765, 89);
+            this.label4.Location = new System.Drawing.Point(739, 89);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 24);
@@ -487,7 +486,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(765, 416);
+            this.label5.Location = new System.Drawing.Point(739, 416);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 24);
@@ -533,7 +532,7 @@
             legend8.ForeColor = System.Drawing.Color.White;
             legend8.Name = "Legend1";
             this.GQuick.Legends.Add(legend8);
-            this.GQuick.Location = new System.Drawing.Point(691, 440);
+            this.GQuick.Location = new System.Drawing.Point(653, 442);
             this.GQuick.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.GQuick.Name = "GQuick";
             this.GQuick.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
@@ -547,15 +546,6 @@
             this.GQuick.Size = new System.Drawing.Size(433, 314);
             this.GQuick.TabIndex = 26;
             this.GQuick.Text = "GInsertion";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "label6";
             // 
             // lBubble
             // 
@@ -573,7 +563,7 @@
             this.lInsertion.AutoSize = true;
             this.lInsertion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lInsertion.ForeColor = System.Drawing.Color.White;
-            this.lInsertion.Location = new System.Drawing.Point(891, 97);
+            this.lInsertion.Location = new System.Drawing.Point(865, 97);
             this.lInsertion.Name = "lInsertion";
             this.lInsertion.Size = new System.Drawing.Size(12, 17);
             this.lInsertion.TabIndex = 30;
@@ -595,7 +585,7 @@
             this.lQuick.AutoSize = true;
             this.lQuick.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lQuick.ForeColor = System.Drawing.Color.White;
-            this.lQuick.Location = new System.Drawing.Point(891, 422);
+            this.lQuick.Location = new System.Drawing.Point(865, 422);
             this.lQuick.Name = "lQuick";
             this.lQuick.Size = new System.Drawing.Size(12, 17);
             this.lQuick.TabIndex = 32;
@@ -621,13 +611,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1378, 750);
+            this.ClientSize = new System.Drawing.Size(1302, 750);
             this.Controls.Add(this.COrden);
             this.Controls.Add(this.lQuick);
             this.Controls.Add(this.lShell);
             this.Controls.Add(this.lInsertion);
             this.Controls.Add(this.lBubble);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.GQuick);
             this.Controls.Add(this.label4);
@@ -690,7 +679,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart GQuick;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lBubble;
         private System.Windows.Forms.Label lInsertion;
         private System.Windows.Forms.Label lShell;
