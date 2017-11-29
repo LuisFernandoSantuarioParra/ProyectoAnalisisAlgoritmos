@@ -66,35 +66,41 @@ namespace AnalsisDeAlgoritmos
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     break;
                 case "Barras":
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
                     break;
                 case "Candy":
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
 
                     break;
                 case "Pastel":
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
 
                     break;
                 case "Area":
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
 
                     break;
                 default:
                     GBubble.Series["Burbuja"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     GInsertion.Series["Insertion"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     GShell.Series["Shell"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+                    GQuick.Series["Quick"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+
                     break;
             }
             
@@ -537,6 +543,33 @@ namespace AnalsisDeAlgoritmos
                 "  } \n" +
                 " } \n" +
                 "}", "Shell Sort",
+           MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("El algoritmo QuickSort se basa en la técnica de divide y vencerás " +
+                "por la que en cada recursión, el problema se divide en subproblemas de menor tamaño" +
+                " y se resuelven por separado (aplicando la misma técnica) para ser unidos de nuevo una" +
+                " vez resueltos." +
+                "En la práctica, es el algoritmo de ordenación más rápido conocido, " +
+                "su tiempo de ejecución promedio es O(n log (n))," +
+                " siendo en el peor de los casos O(n2), caso altamente improbable. " +
+                "El hecho de que sea más rápido que otros algoritmos de ordenación " +
+                "con tiempo promedio de O(n log (n)) ( como SmoothSort o HeapSort )" +
+                " viene dado por que QuickSort realiza menos operaciones ya que el método utilizado es " +
+                "el de partición." +
+               "Su complejidad es O(n log n) \n " +
+               "El Algoritmo es: \n" +
+                "quickSort(arr[], low, high)\n" +
+                "{\n" +
+                "if (low < high)\n" +
+                "{ /* pi is partitioning index, arr[p] is now at right place *\n" +
+                "pi = partition(arr, low, high);\n" +
+                "quickSort(arr, low, pi - 1);  // Before pi\n" +
+                "quickSort(arr, pi + 1, high); // After pi\n" +
+                "  }\n" +
+                "}\n", "Quick Sort",
            MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
         }
     }
